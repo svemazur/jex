@@ -1,0 +1,48 @@
+{
+  "name": "jex",
+  "version": "1.0.0",
+  "description": "JS learning course",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svemazur/jex.git"
+  },
+  "author": "Svetlana Mazur <svemazurdev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svemazur/jex/issues"
+  },
+  "homepage": "https://github.com/svemazur/jex#readme",
+  "browserslist": "> 0.25%, not dead",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/plugin-transform-arrow-functions": "^7.25.9",
+    "@babel/preset-env": "^7.26.7",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "css-loader": "^7.1.2"
+  }
+}
