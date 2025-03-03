@@ -44,7 +44,7 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
-    port: 3008,
+    port: 3019,
     hot: isDev,
   },
   plugins: [
@@ -83,10 +83,9 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: jsLoaders(),
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-        },
+        // options: {
+        //   presets: ['@babel/preset-env'],
+        // },
 
 
       },

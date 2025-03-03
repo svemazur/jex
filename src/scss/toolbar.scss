@@ -1,0 +1,18 @@
+@use "variables";
+@use "mixins";
+
+.exel__toolbar {
+  left: 0;
+  right: 0;
+  top: variables.$header-height;
+  position: absolute;
+  height: variables.$toolbar-height;
+  border-top: 1px solid variables.$border-color;
+  border-bottom: 2px solid variables.$border-color;
+  padding: 7px 10px;
+  display: flex;
+
+  .button {
+    @include mixins.button(green);
+  }
+}
